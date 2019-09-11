@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Hello World | Hexo</title>
-  <meta name="keywords" content>
-  <meta name="description" content="Hello World | Hexo">
+  <title>javascript入门 | Hexo</title>
+  <meta name="keywords" content=" javascript ">
+  <meta name="description" content="javascript入门 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
@@ -307,19 +307,31 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-javascript入门" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">javascript入门</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a href="javascript:" data-rel="javascript">javascript</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color1">javascript</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-11 11:49:15'>2019-09-11 11:49</time>
+        创建时间:<time class="date" title='更新时间: 2019-09-11 14:52:16'>2019-09-11 14:46</time>
         
     </div>
     <div class="article-meta">
@@ -341,7 +353,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#console的使用"><span class="toc-text">console的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#容器关键字"><span class="toc-text">容器关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Math运算"><span class="toc-text">Math运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串方法"><span class="toc-text">字符串方法</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -356,20 +368,32 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h2 id="console的使用"><a href="#console的使用" class="headerlink" title="console的使用"></a>console的使用</h2><pre><code>console.log
+console.table--打印对象（表格形式）
+console.error
+console.clear()--清楚打印内容
+console.warn</code></pre><h2 id="容器关键字"><a href="#容器关键字" class="headerlink" title="容器关键字"></a>容器关键字</h2><pre><code>var 
+let
+const 定义定量，必须赋值 </code></pre><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
+<li>基本数据类型：String（字符串） Number（数值） Boolean（布尔值） Null（空） Undefined（未定义） Symbol（符号）</li>
+<li>引用数据类型：Object（对象）</li>
+</ul>
+<h2 id="Math运算"><a href="#Math运算" class="headerlink" title="Math运算"></a>Math运算</h2><pre><code>Math.PI π值
+Math.ceil 向上取整
+Math.floor 向上取整
+Math.sqrt 求根
+Math.abs 求绝对值
+Math.min 取最小值
+Math.max 取最大值
+Math.random 随机数</code></pre><h2 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h2><pre><code>拼接 +
+append +=
+转义\
+length 字符串长度
+concat 拼接
+大小写转换 toUpperCase toLowerCase
+字符串下标 indexOf()找下标 lastIndexOf（）倒着找 charAt
+获取子字符串 subString( , )=slice ( , ) slice(-3)倒数三个
+转数组 split（‘切割符号’）</code></pre>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -382,12 +406,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World</p>
+    <p><span class="copy-title">文章标题:</span>javascript入门</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="John Doe">John Doe</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-11, 11:49:15</p>
-    <p><span class="copy-title">最后更新:</span>2019-09-11, 11:49:15</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/11/hello-world/" title="Hello World">http://yoursite.com/2019/09/11/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2019-09-11, 14:46:30</p>
+    <p><span class="copy-title">最后更新:</span>2019-09-11, 14:52:16</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/11/javascript入门/" title="javascript入门">http://yoursite.com/2019/09/11/javascript入门/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
