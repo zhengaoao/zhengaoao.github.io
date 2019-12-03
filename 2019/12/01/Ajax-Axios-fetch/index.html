@@ -45,20 +45,20 @@
   };
 </script>
 
-  <meta name="description" content="发送后端请求技术——Ajax Axios fetch Ajax  传统 Ajax 指的是 XMLHttpRequest（XHR）， 最早出现的发送后端请求技术，隶属于原始js中，核心使用XMLHttpRequest对象，多个请求之间如果有先后关系的话，就会出现回调地狱。 JQuery ajax 是对原生XHR的封装，除此以外还增添了对JSONP的支持。 缺点：  本身是针对MVC的编程,不符合现在">
+  <meta name="description" content="发送后端请求技术——Ajax Axios fetchAjax 传统 Ajax 指的是 XMLHttpRequest（XHR）， 最早出现的发送后端请求技术，隶属于原始js中，核心使用XMLHttpRequest对象，多个请求之间如果有先后关系的话，就会出现回调地狱。 JQuery ajax 是对原生XHR的封装，除此以外还增添了对JSONP的支持。  缺点： 本身是针对MVC的编程,不符合现在前端">
 <meta name="keywords" content="请求">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ajax Axios fetch">
 <meta property="og:url" content="http://yoursite.com/2019/12/01/Ajax-Axios-fetch/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="发送后端请求技术——Ajax Axios fetch Ajax  传统 Ajax 指的是 XMLHttpRequest（XHR）， 最早出现的发送后端请求技术，隶属于原始js中，核心使用XMLHttpRequest对象，多个请求之间如果有先后关系的话，就会出现回调地狱。 JQuery ajax 是对原生XHR的封装，除此以外还增添了对JSONP的支持。 缺点：  本身是针对MVC的编程,不符合现在">
+<meta property="og:description" content="发送后端请求技术——Ajax Axios fetchAjax 传统 Ajax 指的是 XMLHttpRequest（XHR）， 最早出现的发送后端请求技术，隶属于原始js中，核心使用XMLHttpRequest对象，多个请求之间如果有先后关系的话，就会出现回调地狱。 JQuery ajax 是对原生XHR的封装，除此以外还增添了对JSONP的支持。  缺点： 本身是针对MVC的编程,不符合现在前端">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="c:%5CUsers%5Clenovo%5Cblog%5Cpublic%5Cimg%5Cvue-resource%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="http://yoursite.com/.com//C:%5CUsers%5Clenovo%5Cblog%5Cpublic%5Cimg%5Cvue-resource%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.png">
 <meta property="og:updated_time" content="2019-12-03T02:30:19.267Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ajax Axios fetch">
-<meta name="twitter:description" content="发送后端请求技术——Ajax Axios fetch Ajax  传统 Ajax 指的是 XMLHttpRequest（XHR）， 最早出现的发送后端请求技术，隶属于原始js中，核心使用XMLHttpRequest对象，多个请求之间如果有先后关系的话，就会出现回调地狱。 JQuery ajax 是对原生XHR的封装，除此以外还增添了对JSONP的支持。 缺点：  本身是针对MVC的编程,不符合现在">
-<meta name="twitter:image" content="c:%5CUsers%5Clenovo%5Cblog%5Cpublic%5Cimg%5Cvue-resource%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.png">
+<meta name="twitter:description" content="发送后端请求技术——Ajax Axios fetchAjax 传统 Ajax 指的是 XMLHttpRequest（XHR）， 最早出现的发送后端请求技术，隶属于原始js中，核心使用XMLHttpRequest对象，多个请求之间如果有先后关系的话，就会出现回调地狱。 JQuery ajax 是对原生XHR的封装，除此以外还增添了对JSONP的支持。  缺点： 本身是针对MVC的编程,不符合现在前端">
+<meta name="twitter:image" content="http://yoursite.com/.com//C:%5CUsers%5Clenovo%5Cblog%5Cpublic%5Cimg%5Cvue-resource%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.png">
 
 <link rel="canonical" href="http://yoursite.com/2019/12/01/Ajax-Axios-fetch/">
 
@@ -192,8 +192,8 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="嗷嗷">
+      <meta itemprop="description" content="足够努力 便能实现">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -243,53 +243,44 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1>发送后端请求技术——Ajax Axios fetch</h1>
-<h2>Ajax</h2>
-<ul>
+        <h1 id="发送后端请求技术——Ajax-Axios-fetch"><a href="#发送后端请求技术——Ajax-Axios-fetch" class="headerlink" title="发送后端请求技术——Ajax Axios fetch"></a>发送后端请求技术——Ajax Axios fetch</h1><h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><ul>
 <li>传统 Ajax 指的是 XMLHttpRequest（XHR）， 最早出现的发送后端请求技术，隶属于原始js中，核心使用XMLHttpRequest对象，多个请求之间如果有先后关系的话，就会出现<strong>回调地狱</strong>。</li>
-<li>JQuery ajax 是对原生XHR的封装，除此以外还增添了对<strong>JSONP</strong>的支持。</li>
-<li>缺点：
-<ul>
-<li>本身是针对MVC的编程,不符合现在前端<strong>MVVM</strong>的浪潮</li>
+<li>JQuery ajax 是对原生XHR的封装，除此以外还增添了对<strong>JSONP</strong>的支持。 </li>
+<li>缺点：<ul>
+<li>本身是针对MVC的编程,不符合现在前端<strong>MVVM</strong>的浪潮 </li>
 <li>基于原生的XHR开发，XHR本身的架构不清晰</li>
-<li>.JQuery整个项目太大，单纯使用ajax却要引入整个JQuery非常的不合理</li>
-<li>不符合关注分离（Separation of Concerns）的原则</li>
-<li>配置和调用方式非常混乱，而且基于事件的异步模型不友好</li>
+<li>.JQuery整个项目太大，单纯使用ajax却要引入整个JQuery非常的不合理 </li>
+<li>不符合关注分离（Separation of Concerns）的原则 </li>
+<li>配置和调用方式非常混乱，而且基于事件的异步模型不友好 </li>
 </ul>
 </li>
 </ul>
-<h2>Axios</h2>
-<ul>
+<h2 id="Axios"><a href="#Axios" class="headerlink" title="Axios"></a>Axios</h2><ul>
 <li>axios 是一个基于Promise 用于浏览器和 nodejs 的 HTTP 客户端，本质上也是对原生XHR的封装，只不过它是Promise的实现版本，符合最新的ES规范</li>
-<li>特征：
-<ul>
-<li>从浏览器中创建 XMLHttpRequest</li>
-<li>支持 Promise API</li>
+<li>特征：<ul>
+<li>从浏览器中创建 XMLHttpRequest </li>
+<li>支持 Promise API </li>
 <li>客户端支持防止CSRF 【防止CSRF:就是让你的每个请求都带一个从cookie中拿到的key, 根据浏览器同源策略，假冒的网站是拿不到你cookie中得key的，这样，后台就可以轻松辨别出这个请求是否是用户在假冒网站上的误导输入，从而采取正确的策略。】</li>
-<li>提供了一些并发请求的接口</li>
-<li>从 node.js 创建 http 请求</li>
-<li>拦截请求和响应</li>
-<li>转换请求和响应数据</li>
-<li>取消请求</li>
-<li>自动转换JSON数据</li>
+<li>提供了一些并发请求的接口 </li>
+<li>从 node.js 创建 http 请求 </li>
+<li>拦截请求和响应 </li>
+<li>转换请求和响应数据 </li>
+<li>取消请求 </li>
+<li>自动转换JSON数据 </li>
 </ul>
 </li>
 </ul>
-<h2>在vue中使用axios</h2>
-<ul>
-<li>
-<p>vue-resource——axios的第三方包</p>
-<p><img src="C:%5CUsers%5Clenovo%5Cblog%5Cpublic%5Cimg%5Cvue-resource%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.png" alt></p>
+<h2 id="在vue中使用axios"><a href="#在vue中使用axios" class="headerlink" title="在vue中使用axios"></a>在vue中使用axios</h2><ul>
+<li><p>vue-resource——axios的第三方包</p>
+<p><img src="/.com//C:%5CUsers%5Clenovo%5Cblog%5Cpublic%5Cimg%5Cvue-resource%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.png" alt></p>
 </li>
 </ul>
-<h2>fetch</h2>
-<ul>
-<li>fetch号称是AJAX的替代品，是在ES6出现的，使用了ES6中的promise对象。Fetch是基于promise设计的。</li>
+<h2 id="fetch"><a href="#fetch" class="headerlink" title="fetch"></a>fetch</h2><ul>
+<li>fetch号称是AJAX的替代品，是在ES6出现的，使用了ES6中的promise对象。Fetch是基于promise设计的。 </li>
 <li><strong>fetch不是ajax的进一步封装，而是原生js，没有使用XMLHttpRequest对象</strong>。</li>
-<li>fetch的优点：
-<ul>
+<li>fetch的优点： <ul>
 <li>符合关注分离，没有将输入、输出和用事件来跟踪的状态混杂在一个对象里</li>
-<li>更好更方便的写法</li>
+<li>更好更方便的写法 </li>
 </ul>
 </li>
 </ul>
@@ -355,21 +346,21 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">发送后端请求技术——Ajax Axios fetch</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text">Ajax</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.2.</span> <span class="nav-text">Axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.3.</span> <span class="nav-text">在vue中使用axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.4.</span> <span class="nav-text">fetch</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#发送后端请求技术——Ajax-Axios-fetch"><span class="nav-number">1.</span> <span class="nav-text">发送后端请求技术——Ajax Axios fetch</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ajax"><span class="nav-number">1.1.</span> <span class="nav-text">Ajax</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Axios"><span class="nav-number">1.2.</span> <span class="nav-text">Axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在vue中使用axios"><span class="nav-number">1.3.</span> <span class="nav-text">在vue中使用axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fetch"><span class="nav-number">1.4.</span> <span class="nav-text">fetch</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
+  <p class="site-author-name" itemprop="name">嗷嗷</p>
+  <div class="site-description" itemprop="description">足够努力 便能实现</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -411,7 +402,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">嗷嗷</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
   </div>
