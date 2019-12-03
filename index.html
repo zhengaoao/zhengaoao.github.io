@@ -1,340 +1,1639 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<!-- Head tag -->
-<head><meta name="generator" content="Hexo 3.9.0">
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Description-->
-
-    
-
-    
-
-    <!--Author-->
-    
-        <meta name="author" content="John Doe">
-    
-
-    <!--Open Graph Title-->
-    
-        <meta property="og:title" content="Hexo">
-    
-
-    <!--Open Graph Description-->
-    
-
-    <!--Open Graph Site Name-->
-        <meta property="og:site_name" content="Hexo">
-
-    <!--Type page-->
-    
-        <meta property="og:type" content="website">
-    
-
-    <!--Page Cover-->
-    
-    
-        <meta property="og:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
-    
-
-        <meta name="twitter:card" content="summary_large_image">
-
-    
-
-    
-        <meta name="twitter:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
-    
-
-    <!-- Title -->
-    
-    <title>Hexo</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Gallery -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
-
-    <!-- Google Analytics -->
-    
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <!-- favicon -->
-    
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+<link rel="canonical" href="http://yoursite.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-<body>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
 
-    <!-- Menu -->
-    <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Configurable Title</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                
-                    <li>
-                        <a href="/">
-                            
-                                Home
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/archives">
-                            
-                                Archives
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/tags">
-                            
-                                Tags
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/categories">
-                            
-                                Categories
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
-                            
-                                <i class="fa fa-github fa-stack-2x"></i>
-                            
-                        </a>
-                    </li>
-                
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <!-- /.container -->
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
 </nav>
+</div>
+    </header>
 
-    <!-- Main Content -->
-    <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
-<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Hexo</h1>
-                    <hr class="small">
-                    <span class="subheading"></span>
-                </div>
-            </div>
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/28/HTML复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/28/HTML复习/" class="post-title-link" itemprop="url">HTML复习</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-10-28 00:16:23 / Modified: 00:17:07" itemprop="dateCreated datePublished" datetime="2019-10-28T00:16:23+08:00">2019-10-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
         </div>
-    </div>
-</header>
+      </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/2019/10/28/HTML复习/">
-        <h2 class="post-title">
-            HTML复习
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-10-28
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/10/28/《ES6标准入门》学习笔记（2）/">
-        <h2 class="post-title">
-            《ES6标准入门》学习笔记（2）
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-10-28
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/10/28/《ES6标准入门》学习笔记（1）/">
-        <h2 class="post-title">
-            《ES6标准入门》学习笔记（1）
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-10-28
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/10/22/js事件/">
-        <h2 class="post-title">
-            javascript事件
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-10-22
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/09/18/lesson-2/">
-        <h2 class="post-title">
-            lesson-2
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-09-18
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/09/11/javascript入门/">
-        <h2 class="post-title">
-            javascript入门
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-09-11
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/09/11/hello-world/">
-        <h2 class="post-title">
-            Hello World
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-09-11
-    </p>
-</div>
-<hr>
-            
-
-            <ul class="pager">
     
     
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="HTML基本概念"><a href="#HTML基本概念" class="headerlink" title="HTML基本概念"></a>HTML基本概念</h3><h4 id="HTML—超文本标记语言"><a href="#HTML—超文本标记语言" class="headerlink" title="HTML—超文本标记语言"></a>HTML—超文本标记语言</h4><p><strong>HTML和XHTML的区别：</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>HTML</th>
+<th>XHTML</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标签名</td>
+<td>可以大写，可以小写</td>
+<td>必须小写</td>
+</tr>
+<tr>
+<td>属性</td>
+<td>不区分大小写</td>
+<td>必须小写</td>
+</tr>
+<tr>
+<td>标签必须严格嵌套</td>
+<td>没有严格要求</td>
+<td>是</td>
+</tr>
+<tr>
+<td>标签必须封闭</td>
+<td>不封闭也正确</td>
+<td>是</td>
+</tr>
+<tr>
+<td>空元素也必须封闭</td>
+<td>均是正确（<code>&lt;img&gt;或&lt;img /&gt;</code>）</td>
+<td>必须<code>&lt;/img /&gt;</code></td>
+</tr>
+<tr>
+<td>属性值必须用双引号引起来</td>
+<td>不必</td>
+<td>必须</td>
+</tr>
+<tr>
+<td>属性值必须使用完整形式</td>
+<td>不必<code>&lt;input disabled&gt;</code></td>
+<td>必须<code>&lt;input disabled=“disabled”/&gt;</code></td>
+</tr>
+<tr>
+<td><em>尽量使用XHTML规范</em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>#### HTML文件基本结构</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>一个完整的HTML结构包括头部、主题等</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1. DOCTYPE 声明：用来声明文档类型，声明文档为HTML文档结构，用来检验是否符合Web相关标准</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2. <code>&lt;html&gt;</code>标签：一个网页以<code>&lt;html&gt;</code>标签开始，以<code>&lt;/html&gt;</code>标签结束</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3. <code>&lt;head&gt;</code>标签：用于定义文档的头部，是所有头部元素的容器。<code>&lt;head&gt;</code>标签中的元素可以用来引用脚本，指示浏览器在哪里找到样式表，提供元信息等。</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4. <code>&lt;title&gt;</code>标签：描述网页的标题</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5. <code>&lt;meta&gt;</code>标签：描述网页具体的摘要信息，包括文档内容类型、字符编码信息、搜索关键字、网站提供的功能和服务的详细描述等。</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6. <code>&lt;body&gt;</code>标签：表示网页的主体部分</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="HTML的基本标签"><a href="#HTML的基本标签" class="headerlink" title="HTML的基本标签"></a>HTML的基本标签</h3><ul>
+<li><p>标题标签 <code>&lt;h1&gt;&lt;h2&gt;...</code></p>
+</li>
+<li><p>分段显示网页段落文本<code>&lt;p&gt;&lt;/p&gt;</code></p>
+</li>
+<li><p>换行<code>&lt;br/&gt;</code></p>
+</li>
+<li><p>水平线<code>&lt;hr/&gt;</code></p>
+</li>
+<li><p>字体样式 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;b&gt;粗体文字&lt;/b&gt;</span><br><span class="line">&lt;em&gt;斜体文字&lt;/em&gt;</span><br><span class="line">&lt;strong&gt;强调文字&lt;/strong&gt;</span><br><span class="line">&lt;sup&gt;&lt;/sup&gt; 上标文字</span><br><span class="line">&lt;sub&gt;&lt;/sub&gt;下标文字</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>页面注释<code>&lt;!- - 注释内容 - -&gt;</code></p>
+</li>
+<li><p>图像<code>&lt;img src=“图片地址” alt=“图像的替代文字” tittle=“鼠标悬停提示文字” algin=“文字对齐方式” / &gt;</code></p>
+</li>
 </ul>
-        </div>
+<table>
+<thead>
+<tr>
+<th>algin属性值</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bottom</td>
+<td>文字底部对齐</td>
+</tr>
+<tr>
+<td>middle</td>
+<td>文字居中对齐</td>
+</tr>
+<tr>
+<td>top</td>
+<td>文字顶部对齐</td>
+</tr>
+</tbody></table>
+<ul>
+<li>网页超链接 <code>&lt;a href=“链接地址” target=“目标窗口位置”&gt;&lt;/a&gt;</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>target属性值</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>_blank</td>
+<td>新建窗口</td>
+</tr>
+<tr>
+<td>_self</td>
+<td>自身窗口</td>
+</tr>
+</tbody></table>
+<p><em>网页超链接的应用场合：</em></p>
+<ul>
+<li>页面间链接</li>
+<li>锚链接</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=“#c4”&gt;&lt;/a&gt;</span><br><span class="line">&lt;a name=“c4”&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>功能性链接：调用其他程序功能<h3 id="列表、表格和框架"><a href="#列表、表格和框架" class="headerlink" title="列表、表格和框架"></a>列表、表格和框架</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4>三种常用列表：无序列表，有序列表和自定义列表<h5 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h5></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">     &lt;li&gt;&lt;/li&gt; </span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
+<p><em>建立不同类型的无序列表</em><br><code>&lt;ul type=“标记类型”&gt;&lt;/ul&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>type属性值</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>disc</td>
+<td>实心圆</td>
+</tr>
+<tr>
+<td>circle</td>
+<td>空心圆</td>
+</tr>
+<tr>
+<td>square</td>
+<td>小方块</td>
+</tr>
+</tbody></table>
+<h5 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">     &lt;li&gt;&lt;/li&gt; </span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+
+<p><em>建立不同类型的有序列表</em></p>
+<table>
+<thead>
+<tr>
+<th>type属性值</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无</td>
+<td>数字</td>
+</tr>
+<tr>
+<td>A</td>
+<td>大写字母</td>
+</tr>
+<tr>
+<td>I（i）</td>
+<td>罗马数字</td>
+</tr>
+</tbody></table>
+<h5 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">    &lt;dt&gt;名词或者概念&lt;/dt&gt; </span><br><span class="line">    &lt;dd&gt;相应的解释和描述&lt;/dd&gt;</span><br><span class="line">    &lt;dt&gt;&lt;/dt&gt;</span><br><span class="line">    &lt;dd&gt;&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+
+<p><em>自定义列表一般用于带有标题和标题解释性内容或者图片和文本内容混合排列的场合</em></p>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;table align=“对齐方式”&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>align属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>left</td>
+<td>左对齐</td>
+</tr>
+<tr>
+<td>right</td>
+<td>右对齐</td>
+</tr>
+<tr>
+<td>center</td>
+<td>居中对齐</td>
+</tr>
+</tbody></table>
+<ul>
+<li>跨行<code>&lt;td colspan=“所跨列数”&gt;&lt;/td&gt;</code></li>
+<li>跨列<code>&lt;td rowspan=“所跨行数”&gt;&lt;/td&gt;</code></li>
+<li>把表格的行分组：表头<code>&lt;thead&gt;</code>、主体<code>&lt;tbody&gt;</code>、脚注<code>&lt;tfoot&gt;</code></li>
+<li>表格标题<code>&lt;caption&gt;标题&lt;/caption&gt;</code></li>
+</ul>
+<h4 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h4><p>框架就是把网页分成几个窗体框，每个窗体框都可以单独显示不同的HTML网页<br>优点：</p>
+<ul>
+<li>在一个浏览器窗口显示多个页面</li>
+<li>可以实现页面复用</li>
+<li>实现典型的“目录结构”</li>
+</ul>
+<h5 id="lt-frameset-gt-框架"><a href="#lt-frameset-gt-框架" class="headerlink" title="&lt;frameset&gt;框架"></a><code>&lt;frameset&gt;</code>框架</h5><p>框架包含<code>&lt;frameset&gt;``&lt;frame&gt;</code>两个标签<br><strong><code>&lt;frameset&gt;</code>和<code>&lt;body&gt;</code>标签不能同时使用</strong><br><code>&lt;frameset&gt;</code>属性：</p>
+<ul>
+<li>cols 表示将页面分割成几列<pre><code>cols=“25%，50%，*”表示将页面分割成3列</code></pre></li>
+<li>rows 表示将页面分割成几行</li>
+<li>横向、纵向同时切割</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;&lt;/head&gt;</span><br><span class="line">    &lt;frameset rows=“25%,*”&gt;</span><br><span class="line">        &lt;frame src=“html文件”/&gt;</span><br><span class="line">        &lt;frameset cold=“20%,*”&gt;</span><br><span class="line">                &lt;frame/&gt;</span><br><span class="line">                &lt;frame/&gt;        </span><br><span class="line">    &lt;/frameset&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;frame&gt;</code>属性：</p>
+<ul>
+<li>src：页面的路径</li>
+</ul>
+<h4 id="lt-iframe-gt-内联框架"><a href="#lt-iframe-gt-内联框架" class="headerlink" title="&lt;iframe&gt;内联框架"></a><code>&lt;iframe&gt;</code>内联框架</h4><h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><ul>
+<li>表单是可以把浏览者输入的数据传送到服务器端的HTML标签</li>
+<li>表单标签<code>&lt;form&gt;&lt;/form&gt;</code></li>
+<li>属性</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>action</td>
+<td>指示服务器上处理表单输出的程序 语法为action=“URL”</td>
+</tr>
+<tr>
+<td>method</td>
+<td>此属性告诉浏览器如何将数据发送给服务器。       method=“get” ：创建请求，包含页面URL、一个问号和表单的值。method=“post” ：表单上的数据会作为一个数据块发送个脚本</td>
+</tr>
+</tbody></table>
+<h4 id="单行文本输入框"><a href="#单行文本输入框" class="headerlink" title="单行文本输入框"></a>单行文本输入框</h4><p><code>&lt;input type=“text” name=“” size=“” maxlength=“” value=“”/&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type=“text”</td>
+<td>定义单行文本输入框</td>
+</tr>
+<tr>
+<td>name</td>
+<td>文本框的名称（独一无二）</td>
+</tr>
+<tr>
+<td>size</td>
+<td>文本框的宽度（单位是单个字符的宽度）</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>最多输入的字符数</td>
+</tr>
+<tr>
+<td>value</td>
+<td>初始值</td>
+</tr>
+<tr>
+<td>#### 多行文本输入框</td>
+<td></td>
+</tr>
+<tr>
+<td><code>&lt;textarea name cols=“” rows=“” wrap=“” &gt;&lt;/textarea&gt;</code></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cols</td>
+<td>宽度</td>
+</tr>
+<tr>
+<td>rows</td>
+<td>高度</td>
+</tr>
+<tr>
+<td>wrap</td>
+<td>定义输入内容大于文本框区域时的显示方法。wrap=“hard” ：文本换行；wrap=“soft” ：文本不换行，默认</td>
+</tr>
+<tr>
+<td>#### 密码输入框</td>
+<td></td>
+</tr>
+<tr>
+<td><code>&lt;input type=“password” name=“” maxlength=“”&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>同单行文本框</td>
+<td></td>
+</tr>
+<tr>
+<td>#### 单选按钮</td>
+<td></td>
+</tr>
+<tr>
+<td><code>&lt;input type=“radio” name=“” value=“”/&gt;</code></td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type=“radio”</td>
+<td>定义单选按钮</td>
+</tr>
+<tr>
+<td>name</td>
+<td>同一组的单选项必须使用同一个名称</td>
+</tr>
+<tr>
+<td>value</td>
+<td>同一组中，域值必须是不同的</td>
+</tr>
+<tr>
+<td>#### 复选框</td>
+<td></td>
+</tr>
+<tr>
+<td><code>&lt;input type=“checkbox” name=“” value=“”/&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>#### 下拉列表框</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select name=“” size=“” multiple&gt;</span><br><span class="line">    &lt;option value=“” selected&gt;XXXXX&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>列表框的名称</td>
+</tr>
+<tr>
+<td>size</td>
+<td>下拉列表框的行数</td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>有-多选，无-单选</td>
+</tr>
+<tr>
+<td>value</td>
+<td>选择项的值</td>
+</tr>
+<tr>
+<td>selected</td>
+<td>默认选中</td>
+</tr>
+</tbody></table>
+<h4 id="普通按钮"><a href="#普通按钮" class="headerlink" title="普通按钮"></a>普通按钮</h4><p><code>&lt;input type=“button” name=“” value=“” onClick=“”/&gt;</code><br>onclick属性表示的是单击行为</p>
+<h4 id="提交按钮"><a href="#提交按钮" class="headerlink" title="提交按钮"></a>提交按钮</h4><p><code>&lt;input type=“submit” name=“” value=“”/&gt;</code></p>
+<p>==注意：==</p>
+<ul>
+<li>使用post方法不会改变地址栏状态，表单数据不会被显示</li>
+<li>使用get方法，地址栏状态会发生改变，表单数据会在URL信息中显示</li>
+<li>post安全些</li>
+</ul>
+<h4 id="重置按钮"><a href="#重置按钮" class="headerlink" title="重置按钮"></a>重置按钮</h4><p><code>&lt;input type=“reset” name=“” value=“”/&gt;</code><br>value属性定义按钮的显示文字</p>
+<h4 id="文件域"><a href="#文件域" class="headerlink" title="文件域"></a>文件域</h4><p>选择需要上传的文本、图片等<br><code>&lt;input type=“file” name=“文件按钮的名称”/&gt;</code></p>
+
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/28/《ES6标准入门》学习笔记（2）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/28/《ES6标准入门》学习笔记（2）/" class="post-title-link" itemprop="url">《ES6标准入门》学习笔记（2）</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-10-28 00:14:32 / Modified: 00:15:53" itemprop="dateCreated datePublished" datetime="2019-10-28T00:14:32+08:00">2019-10-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/《ES6标准入门》学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">《ES6标准入门》学习笔记</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="第四章-字符串的扩展"><a href="#第四章-字符串的扩展" class="headerlink" title="第四章 字符串的扩展"></a>第四章 字符串的扩展</h2><p>ES6加强了对Unicode的支持，并扩展了字符串对象</p>
+<h3 id="字符的Unicode表示法"><a href="#字符的Unicode表示法" class="headerlink" title="字符的Unicode表示法"></a>字符的Unicode表示法</h3><ul>
+<li>JavaScript允许采用\uxxxx表示一个字符，其中xxxx表示字符的Unicode码点。这种表示法有范围（\u0000~\uFFFF）</li>
+<li>ES6:只要将码点放入大括号，就能正确解读（没有范围）</li>
+</ul>
+<h3 id="codePointAt"><a href="#codePointAt" class="headerlink" title="codePointAt()"></a>codePointAt()</h3><ul>
+<li>Javascript内部，字符以UTF-16的格式储存，每个字符固定为2个字节。对于那些需要4个字节储存的字符（Unicode码点大于0xFFFF的字符），JavaScript会认为它们是2个字节</li>
+<li>ES6提供了codePointAt方法，能够正确处理4个字节储存的字符，返回一个字符的码点</li>
+<li>codePointAt方法会正确返回32位的UTF-16字符的码点。对于那些2个字节储存的的常规字符，返回结果与charCodeAt方法相同</li>
+<li>codePointAt方法返回的是码点的十进制值，toString（16）转16进制</li>
+<li>for…of 循环会正确识别32位的UTF-16字符</li>
+</ul>
+<h3 id="String-fromCodePoint"><a href="#String-fromCodePoint" class="headerlink" title="String.fromCodePoint()"></a>String.fromCodePoint()</h3><ul>
+<li>ES5提供了String.fromCharCode方法，用于从码点返回对应字符，但是这个方法不能识别32位的UTF-16字符。高位溢出</li>
+<li>String.fromCodePoint可以识别大于0xFFFF的字符</li>
+<li>如果String.fromCharCode方法有多个参数，则它们会被合并成一个字符串返回</li>
+<li>==注意：== fromCodePoint方法定义在String对象上，而codePointAt方法定义在字符串的实例对象上</li>
+</ul>
+<h3 id="字符串的遍历器接口"><a href="#字符串的遍历器接口" class="headerlink" title="字符串的遍历器接口"></a>字符串的遍历器接口</h3><p>for…of..</p>
+<h3 id="at-—提案"><a href="#at-—提案" class="headerlink" title="at() —提案"></a>at() —提案</h3><p>ES5对字符串对象提供了charAt方法，返回字符串给定位置的字符。该方法不能识别码点大于0xFFFF的字符<br><code>’abc’.charAt(0) // “a”</code></p>
+<h3 id="normalize"><a href="#normalize" class="headerlink" title="normalize()"></a>normalize()</h3><p>ES6为字符串实例提供了normalize方法，用来将字符的不同表示方法统一为同样的形式，称为Unicode正规化</p>
+<h3 id="includes-startWith-endsWith"><a href="#includes-startWith-endsWith" class="headerlink" title="includes(),startWith(),endsWith()"></a>includes(),startWith(),endsWith()</h3><ul>
+<li>Javascript中只有indexOf方法可用来确定一个字符串是否包含在另一个字符串中</li>
+<li>ES6提供了三种新方法</li>
+</ul>
+<ol>
+<li>includes():返回布尔值，表示是否找到了参数字符串</li>
+<li>startsWith():返回布尔值，表示参数字符串是否在源字符串的头部</li>
+<li>endsWith():返回布尔值，表示参数字符串是否在源字符串的尾部</li>
+</ol>
+<p><strong>这三个方法都支持第二个参数，表示开始搜索的位置。endsWith不同，它针对前n个字符</strong></p>
+<h3 id="repeat"><a href="#repeat" class="headerlink" title="repeat()"></a>repeat()</h3><ul>
+<li>repeat方法返回一个新字符串，表示将原字符串重复了n次</li>
+<li>小数取整，负数或者Infinity报错，取0返回空字符串<br>==0到-1之间的小数取整为0，不报错==</li>
+<li>参数NAN等同于0</li>
+<li>如果参数是字符串，先转换为数字</li>
+</ul>
+<h3 id="padStart-padEnd"><a href="#padStart-padEnd" class="headerlink" title="padStart(),padEnd()"></a>padStart(),padEnd()</h3><ul>
+<li>ES2017引入了字符串不全长度的功能</li>
+<li>padStart()用于头部补全，padEnd()用于尾部补全</li>
+<li>接受两个参数，第一个参数用来指定字符串的最小长度，第二个参数则是用来补全的字符串</li>
+<li>如果原字符串等于或大于指定的最小长度，则返回原字符串</li>
+<li>如果用来补全的字符串与原字符串的长度之和超过了指定的最小长度，则会截去超出位数的补全字符串</li>
+<li>省略第二个参数，用空格补全</li>
+<li>用途</li>
+</ul>
+<ol>
+<li>为数值补全指定位数</li>
+<li>提示字符串格式</li>
+</ol>
+<p><code>’12’.padStart(10,’YYYY-MM-DD’) // “YYYY-MM-12”</code></p>
+<h3 id="模版字符串"><a href="#模版字符串" class="headerlink" title="模版字符串"></a>模版字符串</h3><ul>
+<li>用反引号（`）标识</li>
+<li>用途：</li>
+</ul>
+<ol>
+<li>当作普通字符串使用</li>
+<li>定义多行字符串</li>
+<li>在字符串中嵌入变量：把变量名写在${}中：</li>
+</ol>
+<ul>
+<li>模板字符串还能调用函数</li>
+<li>大括号中的值不是字符串，将按照一般的规则转为字符串</li>
+</ul>
+<ul>
+<li>所有模板字符串的空格和换行都是被保留</li>
+<li>标签前面会有一个换行，如果不想要换行，可以使用==trim方法==消除</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(‘#list’).html(`</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;li&gt;first&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;second&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">`.trim());</span><br></pre></td></tr></table></figure>
+
+<h3 id="模版编译"><a href="#模版编译" class="headerlink" title="模版编译"></a>模版编译</h3><h2 id="第五章-正则的扩展"><a href="#第五章-正则的扩展" class="headerlink" title="第五章 正则的扩展"></a>第五章 正则的扩展</h2><h3 id="RegExp函数"><a href="#RegExp函数" class="headerlink" title="RegExp函数"></a>RegExp函数</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/28/《ES6标准入门》学习笔记（1）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/28/《ES6标准入门》学习笔记（1）/" class="post-title-link" itemprop="url">《ES6标准入门》学习笔记（1）</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-10-28 00:04:09 / Modified: 00:11:45" itemprop="dateCreated datePublished" datetime="2019-10-28T00:04:09+08:00">2019-10-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/《ES6标准入门》学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">《ES6标准入门》学习笔记</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>#《ES6标准入门》学习笔记</p>
+<p>##第二章 let和const命令</p>
+<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><ul>
+<li>var声明的变量在全局范围内都有效</li>
+<li>let声明的变量仅在块级作用内有效</li>
+<li>for循环还有一个特别之处：设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。</li>
+<li>var命令会发生“变量提升”现象，即变量可以在声明之前使用，值为undefined</li>
+<li>let所声明的变量一定要在声明后使用，不然就会报错</li>
+<li><strong>暂时性死区（TDZ）：</strong>在代码块内，使用let命令声明变量之前，该变量都是不可用的。</li>
+<li>“暂时性死区”也意味着typeof不再是一个百分之百安全的操作：处于死去的变量会报错—<em>如果一个变量没有被声明，使用typeof，返回undefined</em></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function bar (x=y,y=2)&#123;</span><br><span class="line">    return [x,y];</span><br><span class="line">&#125;</span><br><span class="line">bar();//报错；参数x的默认值等于另一个参数y，y还没有声明，属于“死区”</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>let不允许在相同作用域内重复声明同一个变量=&gt;不能在函数内部重新声明参数</li>
+</ul>
+<h3 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h3><ul>
+<li>为什么需要块级变量？1、内层变量可能会覆盖外层变量；2、用来计数的循环变量泄露为全局变量</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var temp = new Date();</span><br><span class="line">function f()&#123;</span><br><span class="line">    console.log(tmp);</span><br><span class="line">    if  (false) &#123;</span><br><span class="line">        var tmp = ‘hello world’;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">f();//undefined</span><br></pre></td></tr></table></figure>
+
+<p>变量提升导致内层的tmp变量覆盖了外层的tmp变量</p>
+<ul>
+<li>块级作用域的出现使得==立即执行匿名函数==不再必要</li>
+<li>块级作用域与函数声明（ES6的浏览器）：</li>
+</ul>
+<ol>
+<li>允许在块级作用域内声明函数</li>
+<li>函数声明类似于var，即会提升到全局作用域或函数作用域的头部</li>
+<li>同时，函数声明还会提升到所在的块级作用域的头部</li>
+</ol>
+<p>==不要在块内声明一个函数（严格模式会报语法错误），如果确实需要在块内定义函数，可以用函数表达式来声明函数==</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if(x)&#123;var foo=function()&#123;&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>do表达式（只是提案）</li>
+</ul>
+<ol>
+<li>本质上，块级作用域是一个语句，将多个操作封装在一起，没有返回值</li>
+</ol>
+<h3 id="const命令"><a href="#const命令" class="headerlink" title="const命令"></a>const命令</h3><ul>
+<li>const声明一个只读变量，常量的值不能改变</li>
+<li>const一旦声明常量，就必须立即初始化，不能留到以后赋值</li>
+<li>const的作用域与let命令相同：只在声明所在的块级作用域内有效</li>
+<li>不可重复声明</li>
+<li>对于复合类型的数据（主要是对象和数组）而言，变量指向的内存地址保存的只是一个指针<ul>
+<li>如果真的想将对象冻结，应该使用Object.freeze方法<h3 id="顶层对象的属性"><a href="#顶层对象的属性" class="headerlink" title="顶层对象的属性"></a>顶层对象的属性</h3></li>
+</ul>
+</li>
+<li>在ES5中，顶层对象的属性与全局变量是等价的</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">window.a = 1;</span><br><span class="line">a // 1</span><br><span class="line">a = 2;</span><br><span class="line">window.a // 2</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>ES6中，规定：（1）为了保持兼容性，var命令和function命令声明的全局变量依旧是顶层对象的属性；（2）let、const、class命令声明的的全局变量不属于顶层对象的属性</li>
+</ul>
+<h2 id="第三章-变量的结构赋值"><a href="#第三章-变量的结构赋值" class="headerlink" title="第三章 变量的结构赋值"></a>第三章 变量的结构赋值</h2><h3 id="数组的解构赋值"><a href="#数组的解构赋值" class="headerlink" title="数组的解构赋值"></a>数组的解构赋值</h3><ul>
+<li>ES6允许按照一定模式从数组和对象中提取值，然后对变量进行赋值，</li>
+<li>“模式匹配”：等号两边的模式相同</li>
+<li>不完全解构：等号左边的模式只匹配一部分的等号右边的数组</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let [x,y]=[1,2,3];</span><br><span class="line">x // 1</span><br><span class="line">y // 2</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果等号的右边不是数组（或者严格来说不是可遍历的结构），将会报错</li>
+<li>==Iterator接口：== 迭代器</li>
+<li>set结构：</li>
+</ul>
+<ol>
+<li>ES6新增的数据结构</li>
+<li>类似于数组，但是成员都是唯一的，没有重复</li>
+<li>Set本身是一个构造函数，用来生成set数据结构，可以接受一个数组（具有Iterator接口的其他数据结构）作为参数，用来初始化</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let [x,y,z]=new Set ([‘a’,’b’,’c’]);</span><br><span class="line">x // “a”</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>解构赋值允许指定默认值</li>
+<li><em>如果一个数组成员不严格等于（===）undefined，默认值是不会生效的</em></li>
+<li>如果默认值是一个表达式，那么这个表达式是惰性求值，即只有在用到是才会求值</li>
+</ul>
+<h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><ul>
+<li>对象的解构与数组有一个重要的不同。数组的元素是按次序排列的，变量的去值是由它的位置决定的；而对象的属性没有次序，变量必须与属性同名才能取到正确的值</li>
+<li>变量名与属性名不一致</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var &#123;foo:baz&#125;=&#123;foo:’aaa’,bar:’bbb’&#125;;</span><br><span class="line">baz // “aaa”</span><br><span class="line">foo // 报错—foo是匹配的模式，baz才是变量</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>对象的解构赋值的内部机制是先找到同名属性，然后再赋值给对应的变量。==真正被赋值的是变量，而不是属性==</li>
+<li>对象的解构赋值可以很方便地将现有对象的方法和属性赋值到某个变量。 </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let arr =[1,2,3];</span><br><span class="line">let &#123;0:first,[arr.length - 1] : last&#125;=arr;</span><br><span class="line">first // 1</span><br><span class="line">last // 3</span><br></pre></td></tr></table></figure>
+
+<p><strong>数组是特殊的对象，数组arr的0键对应的值是1，[arr.length-1]就是2键</strong></p>
+<h3 id="字符串的解构赋值"><a href="#字符串的解构赋值" class="headerlink" title="字符串的解构赋值"></a>字符串的解构赋值</h3><ul>
+<li>字符串也可以解构赋值，这是因为此时字符串被转换成了一个类似数组的对象</li>
+<li>类似数组的对象都有一个length属性</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let &#123;length : Len&#125;=‘hello’;</span><br><span class="line">len //5</span><br></pre></td></tr></table></figure>
+
+<h3 id="数值和布尔值的解构赋值"><a href="#数值和布尔值的解构赋值" class="headerlink" title="数值和布尔值的解构赋值"></a>数值和布尔值的解构赋值</h3><ul>
+<li>如果等号右边是数值和布尔值，则会先转为对象</li>
+<li><strong>解构赋值的规则是，只要等号右边的值不是对象或数组，就先将其转为对象。由于undefined的null无法转为对象，对他们进行解构赋值是都会报错</strong></li>
+</ul>
+<h3 id="函数参数的解构赋值"><a href="#函数参数的解构赋值" class="headerlink" title="函数参数的解构赋值"></a>函数参数的解构赋值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function add([x,y])&#123;   </span><br><span class="line">    return x+y; </span><br><span class="line">&#125;</span><br><span class="line">add([1,2])//3</span><br></pre></td></tr></table></figure>
+
+<p>参数传入时，解构成变量x和y</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[1,2],[3,4]].map(( [a,b] ) =&gt; a+b);</span><br><span class="line">//[3,7]</span><br></pre></td></tr></table></figure>
+
+<h3 id="圆括号问题"><a href="#圆括号问题" class="headerlink" title="圆括号问题"></a>圆括号问题</h3><ul>
+<li>ES6规则：只要有可能导致解构歧义，就不得使用圆括号</li>
+<li>建议：只要有可能，就不要在模式中放置圆括号</li>
+<li>以下解构赋值不能使用圆括号：</li>
+</ul>
+<ol>
+<li>变量声明语句</li>
+<li>函数参数</li>
+<li>赋值语句的模式</li>
+</ol>
+<ul>
+<li>可以使用圆括号的情况：赋值语句的非模式部分</li>
+</ul>
+<h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><ul>
+<li>交换变量的值</li>
+<li>从函数返回多个值：函数只能返回一个值，如果返回多个值，只能将它们当在数组或对象里</li>
+<li>函数参数的定义：将一组参数与变量名对应起来</li>
+<li>提取JSON数据</li>
+<li>函数参数的默认值</li>
+<li>遍历Map结构</li>
+<li>输入模块的指定方法（不懂）</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/22/js事件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/22/js事件/" class="post-title-link" itemprop="url">javascript事件</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-10-22 14:46:30" itemprop="dateCreated datePublished" datetime="2019-10-22T14:46:30+08:00">2019-10-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-10-23 00:14:54" itemprop="dateModified" datetime="2019-10-23T00:14:54+08:00">2019-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><p>Javascript和Html的交互是通过事件实现的</p>
+<h4 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h4><p>事件流描述的是从页面接受事件的顺序</p>
+<ul>
+<li>IE的事件流是事件冒泡流</li>
+<li>Netscape Communicator的事件流是事件捕获流</li>
+</ul>
+<h5 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h5><p>单击页面<code>&lt;div&gt;</code><br><code>&lt;div&gt;—&lt;body&gt;—&lt;html&gt;—document</code><br>沿DOM树向上传播</p>
+<h5 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a>事件捕获</h5><p>单击页面<code>&lt;div&gt;</code><br><code>document—&lt;html&gt;——&lt;body&gt;—&lt;div&gt;</code><br>沿DOM树向下传播<br><em>建议：使用事件冒泡</em></p>
+<h5 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h5><ul>
+<li>事件捕获阶段</li>
+<li>处于目标阶段</li>
+<li>事件冒泡阶段</li>
+</ul>
+<h4 id="事件处理程序"><a href="#事件处理程序" class="headerlink" title="事件处理程序"></a>事件处理程序</h4><p>事件就是用户或浏览器自身执行的某种动作，例如click，load，和mouseover<br>响应某个事件的函数就叫做事件处理程序（事件侦听器），以“on”开头。</p>
+<h5 id="HTML事件处理程序"><a href="#HTML事件处理程序" class="headerlink" title="HTML事件处理程序"></a>HTML事件处理程序</h5><p>某个元素支持的每种事件，都可以使用一个与相应事件同名处理程序同名的HTML特性来指定。<br><code>&lt;input type=‘button’ value=‘click me’ onclick=“alert(‘Clicked’)”&gt;</code><br><em>很多HTML事件处理程序都会被封装在一个try-catch块中</em></p>
+<h5 id="DOM0级事件处理程序"><a href="#DOM0级事件处理程序" class="headerlink" title="DOM0级事件处理程序"></a>DOM0级事件处理程序</h5><p>将一个函数赋值给一个事件处理程序属性<br><em>要使用JavaScript指定事件处理程序，首先必须取得一个要操作的对象的饮用：</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var btn = document.getElementById(‘myBtn’);</span><br><span class="line">btn.onclick = function()&#123;</span><br><span class="line">//todo</span><br><span class="line">&#125;;</span><br><span class="line">btn.onclick = null ;//删除事件处理程序</span><br></pre></td></tr></table></figure>
+
+<h5 id="DOM2级事件处理程序"><a href="#DOM2级事件处理程序" class="headerlink" title="DOM2级事件处理程序"></a>DOM2级事件处理程序</h5><p>“DOM2级事件”定义了两个方法：指定和删除事件处理程序：addEventListener()和removeEventListener()<br>接受3个参数==要处理的事件名、作为事件处理程序的函数和一个布尔值==（布尔值：true—在捕获阶段调用事件处理程序，false—在冒泡阶段）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var btn =  document.getElementById(‘myBtn’);</span><br><span class="line">btn.addEventListener(“click”,function()&#123;</span><br><span class="line">//todo1</span><br><span class="line">&#125;,false);</span><br><span class="line">btn.addEventListener(“click”,function()&#123;</span><br><span class="line">//todo2</span><br><span class="line">&#125;,false);//按照添加的顺序触发</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用DOM2级方法添加处理程序的好处是可以添加多个事件处理程序。</li>
+<li>通过addEventListener()添加的事件只能使用removeEventListener()来移除<br><em>匿名程序无法移除</em></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var btn =  document.getElementById(‘myBtn’);</span><br><span class="line">var handle = function()&#123;</span><br><span class="line">//todo</span><br><span class="line">&#125;;</span><br><span class="line">btn.addEventListener(“click”,handle,false);</span><br><span class="line">btn.removeEventListener(“click”,handle,false);//参数相同</span><br></pre></td></tr></table></figure>
+
+<p>==区别==</p>
+<ul>
+<li>DOM0级和DOM2级能添加多个事件处理程序，HTML事件不行</li>
+<li>DOM0级 覆盖，执行最后一个</li>
+<li>DOM2级 不覆盖，依次执行<h5 id="IE事件处理程序"><a href="#IE事件处理程序" class="headerlink" title="IE事件处理程序"></a>IE事件处理程序</h5>IE实现了与DOM中类似的两个方法：attachEvent()和detachEvent()<br>接受两个参数：==事件处理程序名称和事件处理程序函数==<br>由于IE8及更早版本只支持事件冒泡，所以通过attachEvent()添加的事件处理程序都会被添加到冒泡阶段</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var btn =  document.getElementById(‘myBtn’);</span><br><span class="line">btn.attachEvent(“onclick”,function()&#123;</span><br><span class="line">//todo1</span><br><span class="line">&#125;;//‘onclick’而不是‘click’</span><br></pre></td></tr></table></figure>
+
+<p><em>在IE中使用attachEvent()与使用DOM0级方法的主要区别在于事件处理程序的作用域</em></p>
+<ul>
+<li>DOM0级：事件处理程序会在其所属元素的作用域内运行</li>
+<li>attachEvent()：全局作用域（this=window）</li>
+</ul>
+<p><strong>可添加多个事件处理程序，执行顺序与添加顺序相反</strong><br><strong>支持IE事件处理程序的只有IE和Opera</strong></p>
+<h5 id="跨浏览器的事件处理程序"><a href="#跨浏览器的事件处理程序" class="headerlink" title="跨浏览器的事件处理程序"></a>跨浏览器的事件处理程序</h5><p>使用能力检测</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">var EventUtil = &#123;</span><br><span class="line">    addHandler: function(element,type,handler)&#123;//三个参数：要操作的元素、事件名称和事件处理程序函数</span><br><span class="line">        if (element.addEventListener)&#123;</span><br><span class="line">            element.addEventListener(type, handler, false);</span><br><span class="line">        &#125; else if (element.attachEvent) &#123;</span><br><span class="line">            element.attachEvent(“on”+type,handler);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            element.[“on”+type] = handler;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    removeHandler: function()&#123;</span><br><span class="line">        if (element.removeEventListener)&#123;</span><br><span class="line">            element.addEventListener(type, handler, false);</span><br><span class="line">        &#125; else if (element.attachEvent) &#123;</span><br><span class="line">            element.detachEvent(“on”+type,handler);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            element.[“on”+type] = null;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用EventUtil对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var btn =  document.getElementById(‘myBtn’);</span><br><span class="line">var handler = function()&#123;</span><br><span class="line">//todo</span><br><span class="line">&#125;;</span><br><span class="line">EventUtil.addHandler (btn,”click”,handler);</span><br><span class="line">EventUtil.removeHandler (btn,”click”,handler);</span><br></pre></td></tr></table></figure>
+
+<h4 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h4><p>在触发DOM上的某个事件时，会产生一个事件对象event，包含着所有与事件有关的信息。==包括导致事件的元素、事件的类型以及其他与特定事件相关的信息==<br><em>所有浏览器都支持event对象，但是支持的方法不同</em></p>
+<h5 id="DOM中的事件对象（event）"><a href="#DOM中的事件对象（event）" class="headerlink" title="DOM中的事件对象（event）"></a>DOM中的事件对象（event）</h5><h6 id="currentTarget和target属性"><a href="#currentTarget和target属性" class="headerlink" title="currentTarget和target属性"></a>currentTarget和target属性</h6><ul>
+<li>currentTarget 其事件处理程序当前正在处理事件的那个元素</li>
+<li>target 事件的目标</li>
+</ul>
+<p><em>区别:</em></p>
+<ul>
+<li>在事件处理程序内部，对象this始终等于currentTarget。</li>
+<li>如果直接将事件处理程序指定给了目标元素—this=event.currentTarget=event.target</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">document.body.onclick=function (event)&#123;</span><br><span class="line">    alert (event.currentTarget === document.body);//ture</span><br><span class="line">    alert (this === document.body);//ture</span><br><span class="line">    alert (event.target === document.getElementById(“myBtn”));//ture</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>按钮没有注册事件</li>
+</ul>
+<h6 id="type属性"><a href="#type属性" class="headerlink" title="type属性"></a>type属性</h6><p>在需要通过一个函数处理多个事件时，可以使用type属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">var btn =  document.getElementById(‘myBtn’);</span><br><span class="line">var handler = function(event)&#123;</span><br><span class="line">    switch(event.type)&#123;</span><br><span class="line">        case  “click”:</span><br><span class="line">            alert(‘Clicked’);</span><br><span class="line">            break;</span><br><span class="line">            </span><br><span class="line">        case “mouseover”:</span><br><span class="line">            event.target.style.backgroundColor = ‘red’;</span><br><span class="line">            break;</span><br><span class="line">            </span><br><span class="line">        case“mouseout”:</span><br><span class="line">            event.target.style.backgroundColor = ‘’;</span><br><span class="line">            break;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">btn.onclick = handler;</span><br><span class="line">btn.onmouseover = handler;</span><br><span class="line">btn.onmouseout = handler;</span><br></pre></td></tr></table></figure>
+
+<h6 id="preventDefault-方法"><a href="#preventDefault-方法" class="headerlink" title="preventDefault()方法"></a>preventDefault()方法</h6><ul>
+<li>preventDefault（）：取消事件的默认行为，如果cancelable是true。</li>
+<li>cancelable：表明是否可以取消事件的默认行为</li>
+</ul>
+<h6 id="stopPropagation-方法"><a href="#stopPropagation-方法" class="headerlink" title="stopPropagation()方法"></a>stopPropagation()方法</h6><p>用于立即停止事件在DOM层次中的传播</p>
+<h6 id="eventPhase属性"><a href="#eventPhase属性" class="headerlink" title="eventPhase属性"></a>eventPhase属性</h6><p>确定事件当前正位于事件流的哪个阶段</p>
+<ul>
+<li>1–捕获阶段</li>
+<li>2–目标对象</li>
+<li>3–冒泡阶段</li>
+</ul>
+<p>==只有在事件处理程序执行期间，event对象才会存在；一旦执行完，event对象立即销毁==</p>
+<h5 id="IE中的事件对象"><a href="#IE中的事件对象" class="headerlink" title="IE中的事件对象"></a>IE中的事件对象</h5><p><em>要访问IE中的event对象有几种不同的方式，取决于指定事件处理程序的方法：</em></p>
+<ul>
+<li>使用DOM0级方法添加事件处理程序时，event对象作为window对象的一个属性存在</li>
+<li>如果事件处理程序是使用attchEvent（）添加的，那么就会有一个event对象作为参数传入事件处理程序函数中</li>
+<li>HTML特性指定的事件处理程序，那么还可以通过一个名叫event的变量来访问event对象</li>
+</ul>
+<h6 id="srcElement属性"><a href="#srcElement属性" class="headerlink" title="srcElement属性"></a>srcElement属性</h6><p>事件的目标（与DOM中的target属性相同）<br><em>事件处理程序的作用域是根据指定它的方式来确定的，所以不能认为this会始终等于事件目标</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var btn =  document.getElementById(‘myBtn’);</span><br><span class="line">btn.onclick = function()&#123;</span><br><span class="line">    alert(window.event.srcElement === this);//true</span><br><span class="line">&#125;;</span><br><span class="line">btn.attachEvent(“onclick”,function(event)&#123;</span><br><span class="line">    alert(event.srcElement === this);//false</span><br><span class="line">&#125;);</span><br><span class="line">//attachEvent() 作用域：全局</span><br></pre></td></tr></table></figure>
+
+<h6 id="returnValue属性"><a href="#returnValue属性" class="headerlink" title="returnValue属性"></a>returnValue属性</h6><p>默认值为true，将其设置为false就可以去取消事件的默认行为（与DOM中的preventDefault（）方法作用相同）</p>
+<h6 id="cancelBubble属性"><a href="#cancelBubble属性" class="headerlink" title="cancelBubble属性"></a>cancelBubble属性</h6><p>默认值为false，将其设置为true就可以取消事件冒泡（与DOM中的stopPropagation（）方法的作用相同）</p>
+<h5 id="跨浏览器的事件对象"><a href="#跨浏览器的事件对象" class="headerlink" title="跨浏览器的事件对象"></a>跨浏览器的事件对象</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">var EventUtil = &#123;</span><br><span class="line">    addHandler : function(element,type,handler)&#123;&#125;,</span><br><span class="line">    </span><br><span class="line">    getEvent : function(event)&#123;</span><br><span class="line">        return event ? event : window.event;</span><br><span class="line">    &#125;,</span><br><span class="line">    </span><br><span class="line">    getTarget : function(event)&#123;</span><br><span class="line">        return event.target || event.srcElement;</span><br><span class="line">    &#125;,</span><br><span class="line">    </span><br><span class="line">    preventDefault : function(event)&#123;</span><br><span class="line">        if (event.preventDefault())&#123;</span><br><span class="line">            event.preventDefault();</span><br><span class="line">        &#125;else &#123;</span><br><span class="line">            event.returnValue = false;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">     </span><br><span class="line">    removeHandler : function(element,type,handler)&#123;&#125;,</span><br><span class="line">    </span><br><span class="line">    stopPropagation : function(event)&#123;</span><br><span class="line">        if(event.stopPropagation())&#123;</span><br><span class="line">            event.stopPropagation();</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            event.cancelBubble = true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="事件类型"><a href="#事件类型" class="headerlink" title="事件类型"></a>事件类型</h4><h5 id="UI事件"><a href="#UI事件" class="headerlink" title="UI事件"></a>UI事件</h5><p>UI事件指的是那些不一定与用户操作有关的事件、<br>多数这些事件都与window对象或表单控件相关<br>除了DOMActivate（DOM3废弃）之外，其他事件在DOM2级事件中都归为HTML事件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var isSupported = document.implementation.hasFeature(“HTMLEvents”,”2.0”);// 确定浏览器是否支持DOM2级事件规定放入HTML事件</span><br><span class="line">var isSupported = document.implementation.hasFeature(“UIEvent”,”3.0”);//确定浏览器是否支持“DOM3级事件”定义的事件</span><br></pre></td></tr></table></figure>
+
+<h6 id="load事件"><a href="#load事件" class="headerlink" title="load事件"></a>load事件</h6><ul>
+<li>当页面完全加载后（包括所有图像、javasc文件、CSS文件等外部资源），就会触发window上面的load事件</li>
+<li>两种定义onload事件处理程序的方法：</li>
+</ul>
+<p>通过JavaScript来指定事件处理程序的方式（推荐使用）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">EventUtil.addHandler(window,’Load’,function(event)&#123;</span><br><span class="line">        alert(‘Loaded!’);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>为<code>&lt;body&gt;</code>元素添加一个onload特性</p>
+<p><code>&lt;body onload=“alert(‘loaded!’)”&gt;</code><br><em>图像,<code>&lt;script&gt;</code>,<code>&lt;link&gt;</code>也可以触发load事件</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">EventUtil.addHandler(window,”load”,function()&#123;</span><br><span class="line">    var image = document.createElement(“img”);</span><br><span class="line">    EventUtil.addHandler(image,”load”,function(event)&#123;</span><br><span class="line">        event = EventUtil.getEvent(event);</span><br><span class="line">        alert(EventUtil.getTarget(event).src);</span><br><span class="line">    &#125;);</span><br><span class="line">    document.body.appendChild(image);</span><br><span class="line">    image.src = “smile.gif”;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><em>新图像元素不一定要从添加到文档后才开始下载，只要设置了src属性就会开始下载</em></p>
+<h6 id="unload事件"><a href="#unload事件" class="headerlink" title="unload事件"></a>unload事件</h6><p>在文档被完全卸载后触发—清除引用，以避免内存泄露<br><em>根据“DOM2级事件”，应该在<code>&lt;body&gt;</code>元素而非对象上面触发unload事件。不过，所有的浏览器都在window上实现了unload事件，以确保向后兼容</em></p>
+<h6 id="resize事件"><a href="#resize事件" class="headerlink" title="resize事件"></a>resize事件</h6><p>当浏览器窗口被调整到一个新的高度或宽度时，就会触发resize事件<br><em>浏览器窗口最大化或最小化时也会触发resize事件</em></p>
+<h6 id="scroll事件"><a href="#scroll事件" class="headerlink" title="scroll事件"></a>scroll事件</h6><p>当用户滚动带滚动条的元素中的内容时，在该元素上面触发</p>
+<h5 id="焦点事件"><a href="#焦点事件" class="headerlink" title="焦点事件"></a>焦点事件</h5><p>焦点事件会在页面元素获得或失去焦点时触发<br>利用这些事件并与document。hasFocus（）方法及document.activeElement属性配合，可以知晓用户在页面上的行踪</p>
+<ul>
+<li>blur 在元素失去焦点时触发，不会冒泡</li>
+<li>focus：在元素获得焦点时触发，不会冒泡</li>
+<li>DOMFocusOut：失去焦点时触发（DOM3废弃）</li>
+<li>DOMFocusIn：获得焦点时触发（DOM3废弃）</li>
+<li>focusin：等价于focus，但会冒泡</li>
+<li>focusout：等价于blur</li>
+</ul>
+<p><code>var isSupported = document.implementation.hasFeature(“FocusEvent”,”3.0”);//确定浏览器是否支持这些事件</code></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/18/lesson-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/18/lesson-2/" class="post-title-link" itemprop="url">lesson-2</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-09-18 12:57:43 / Modified: 14:02:44" itemprop="dateCreated datePublished" datetime="2019-09-18T12:57:43+08:00">2019-09-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/英语学习/" itemprop="url" rel="index">
+                    <span itemprop="name">英语学习</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Q1"><a href="#Q1" class="headerlink" title="Q1:"></a>Q1:</h3><h4 id="近义词"><a href="#近义词" class="headerlink" title="近义词"></a>近义词</h4><ul>
+<li>opponent = rival 对手</li>
+<li>disintegrating = breakdown = collapse 分解 瓦解</li>
+<li>hubris = arrogance 自傲</li>
+<li>contradictions = conflict  矛盾</li>
+<li>founding = basic 基础的</li>
+<li>shattered = destroyed  </li>
+<li>oblige = responsibility 责任</li>
+<li>degenerated = degrade 降低</li>
+<li>drudgery = dull work 枯燥的工作<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4></li>
+<li>liberalism 自由主义 </li>
+<li>over the past four centuries 在过去的四个世纪中</li>
+<li>battlefield 战场</li>
+<li>internal 内部的</li>
+<li>gathering 聚集的</li>
+<li>twilight 黎明/暮年</li>
+<li>tenets 信条</li>
+<li>meritocratic arisocracy 精英贵族；新贵族</li>
+<li>aloofness 高傲</li>
+<li>noblesse 贵族</li>
+<li>democracy 民主</li>
+<li>theatre 电影院，戏院</li>
+<li>absurd 无价值</li>
+<li>reduce into 转变为 </li>
+</ul>
+<h3 id="Q2"><a href="#Q2" class="headerlink" title="Q2:"></a>Q2:</h3><h4 id="近义词-1"><a href="#近义词-1" class="headerlink" title="近义词"></a>近义词</h4><ul>
+<li>advent = birth 出现</li>
+<li>collective = shared 集体的<h4 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h4></li>
+<li>mistake A for B 错把A当作B</li>
+<li>repetition 重复</li>
+<li>philosopher 哲学家</li>
+<li>identify A with B 把A当作B</li>
+<li>self-mastery 自我控制</li>
+<li>self-expression 自我表达</li>
+<li>conquest 征服，战胜</li>
+<li>hedonistic 享乐的 </li>
+<li>desire 欲望</li>
+<li>indulgence 放纵</li>
+<li>capture 捕获</li>
+<li>disillusionment 幻灭</li>
+<li>echoing 回应</li>
+<li>complaint 抱怨</li>
+<li>rampant 泛滥</li>
+<li>commercialism 商业主义</li>
+<li>narcissistic 自恋</li>
+<li>bullying 恶棍</li>
+<li>atomisation 原子化</li>
+<li>dissatisfaction 不满</li>
+<li>chaotic 混乱</li>
+<li>dominance 统治性的 </li>
+<li>impulses 冲动</li>
+<li>fierce 凶猛的</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/11/javascript入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/11/javascript入门/" class="post-title-link" itemprop="url">javascript入门</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-09-11 14:46:30" itemprop="dateCreated datePublished" datetime="2019-09-11T14:46:30+08:00">2019-09-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-12 10:01:02" itemprop="dateModified" datetime="2019-09-12T10:01:02+08:00">2019-09-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="console的使用"><a href="#console的使用" class="headerlink" title="console的使用"></a>console的使用</h2><pre><code>console.log
+console.table--打印对象（表格形式）
+console.error
+console.clear()--清楚打印内容
+console.warn</code></pre><h2 id="容器关键字"><a href="#容器关键字" class="headerlink" title="容器关键字"></a>容器关键字</h2><pre><code>var 
+let
+const 定义定量，必须赋值 </code></pre><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
+<li>基本数据类型：String（字符串） Number（数值） Boolean（布尔值） Null（空） Undefined（未定义） Symbol（符号）</li>
+<li>引用数据类型：Object（对象）</li>
+</ul>
+<h2 id="Math运算"><a href="#Math运算" class="headerlink" title="Math运算"></a>Math运算</h2><pre><code>Math.PI π值
+Math.ceil 向上取整
+Math.floor 向上取整
+Math.sqrt 求根
+Math.abs 求绝对值
+Math.min 取最小值
+Math.max 取最大值
+Math.random 随机数</code></pre><h2 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h2><pre><code>拼接 +
+append +=
+转义\
+length 字符串长度
+concat 拼接
+大小写转换 toUpperCase toLowerCase
+字符串下标 indexOf()找下标 lastIndexOf（）倒着找 charAt
+获取子字符串 subString( , )=slice ( , ) slice(-3)倒数三个
+转数组 split（‘切割符号’）</code></pre><h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><h2 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h2><pre><code>const numbers = [43,45,46,......]
+数组内元素可以是任意类型
+numbers.length //获取长度
+Array.isArray(numbers) //检查是不是数组
+numbers[3] //获取数组单个元素
+numbers[2] = 100 //更改单个元素值
+numbers.indexOf(43) //查找元素下标
+numbers.push()//从后面添加元素
+numbers.unshift ()//从前面添加
+numbers.pop()//从后面删除
+numbers.shift()//从前面删除
+numbers.splice(1,3)//删除第一位到第三位的内容
+numbers.reverse()//反转
+numbers.concat(numbers2)//数组拼接
+numbers.sort()//排序--逐位比较
+numbers.sort(function(x,y){
+return x-y;
+    })//正常排序</code></pre><h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><h2 id="日期"><a href="#日期" class="headerlink" title="日期"></a>日期</h2><h2 id="分支语句"><a href="#分支语句" class="headerlink" title="分支语句"></a>分支语句</h2><pre><code>if（‘条件’）{}</code></pre><p>条件 关系运算符 逻辑运算符 最终结果为boolean</p>
+<ul>
+<li><p>关系运算符：&gt; &lt; == =&lt; &gt;= != === !== === ！==（不仅判断值还判断类型）</p>
+</li>
+<li><p>逻辑运算符：&amp;&amp; || ！</p>
+<p>  if(){}else{} </p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/11/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/11/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-09-11 11:49:15" itemprop="dateCreated datePublished" datetime="2019-09-11T11:49:15+08:00">2019-09-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
 </div>
 
 
 
-    <!-- Footer -->
-    <hr />
+      </div>
 
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                </ul>
-                <p class="copyright text-muted">&copy; 2019 John Doe<br></p>
-                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
-                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
-            </div>
-        </div>
     </div>
-</footer>
+  </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-    <!-- After footer scripts -->
-    
-<!-- jQuery -->
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+      </div>
+    </main>
 
-<!-- Bootstrap -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <footer class="footer">
+      <div class="footer-inner">
+        
 
-<!-- Gallery -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  </div>
 
-<!-- Disqus Comments -->
+        
 
 
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
 
 </body>
-
 </html>
